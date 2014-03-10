@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 地图显示区域 -->
+
+    <FrameLayout
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left|center" >
+
+        <xzd.mobile.android.ui.MyLocationMapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom" >
+
+        <FrameLayout
+            android:id="@+id/scale_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <!-- 位置信息 -->
+
+            <RelativeLayout
+                android:id="@+id/topview_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="60dip"
+                android:layout_marginLeft="20dip" >
+
+                <ImageButton
+                    android:id="@+id/locateBtn"
+                    android:layout_width="38.0dip"
+                    android:layout_height="38.0dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selector_main_map_button_bg"
+                    android:gravity="center"
+                    android:src="@drawable/ft_loc_normal" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</merge>

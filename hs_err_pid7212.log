@@ -1,0 +1,110 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=7212, tid=5688
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_17-b02
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.7-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000210d000):  JavaThread "Unknown thread" [_thread_in_vm, id=5688, stack(0x0000000002190000,0x0000000002290000)]
+
+Stack: [0x0000000002190000,0x0000000002290000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000210d000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=5688, stack(0x0000000002190000,0x0000000002290000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.116 loading class 0x0000000001f94110 done
+Event: 0.116 loading class 0x0000000001f528e0 done
+Event: 0.116 loading class 0x0000000001f528b0
+Event: 0.116 loading class 0x0000000001f9fd90
+Event: 0.117 loading class 0x0000000001f9fd90 done
+Event: 0.117 loading class 0x0000000001f9fdd0
+Event: 0.117 loading class 0x0000000001f9fdd0 done
+Event: 0.117 loading class 0x0000000009a7c800
+Event: 0.117 loading class 0x0000000009a7c800 done
+Event: 0.117 loading class 0x0000000001f528b0 done
+
+
+Dynamic libraries:
+0x000000013f900000 - 0x000000013f933000 	D:\Dev\java\jre7\bin\javaw.exe
+0x0000000076e10000 - 0x0000000076fb9000 	C:\windows\SYSTEM32\ntdll.dll
+0x0000000076bf0000 - 0x0000000076d0f000 	C:\windows\system32\kernel32.dll
+0x000007fefcd90000 - 0x000007fefcdfb000 	C:\windows\system32\KERNELBASE.dll
+0x000007fefd3c0000 - 0x000007fefd49b000 	C:\windows\system32\ADVAPI32.dll
+0x000007fefdef0000 - 0x000007fefdf8f000 	C:\windows\system32\msvcrt.dll
+0x000007fefd280000 - 0x000007fefd29f000 	C:\windows\SYSTEM32\sechost.dll
+0x000007fefd540000 - 0x000007fefd66d000 	C:\windows\system32\RPCRT4.dll
+0x0000000076d10000 - 0x0000000076e0a000 	C:\windows\system32\USER32.dll
+0x000007fefe320000 - 0x000007fefe387000 	C:\windows\system32\GDI32.dll
+0x000007fefe210000 - 0x000007fefe21e000 	C:\windows\system32\LPK.dll
+0x000007fefd6f0000 - 0x000007fefd7b9000 	C:\windows\system32\USP10.dll
+0x000007fefb660000 - 0x000007fefb854000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefd020000 - 0x000007fefd091000 	C:\windows\system32\SHLWAPI.dll
+0x000007fefdf90000 - 0x000007fefdfbe000 	C:\windows\system32\IMM32.DLL
+0x000007fefd2a0000 - 0x000007fefd3a9000 	C:\windows\system32\MSCTF.dll
+0x000000006cc00000 - 0x000000006ccd1000 	D:\Dev\java\jre7\bin\msvcr100.dll
+0x000000005da00000 - 0x000000005e11f000 	D:\Dev\java\jre7\bin\server\jvm.dll
+0x000007fef94c0000 - 0x000007fef94c9000 	C:\windows\system32\WSOCK32.dll
+0x000007fefe120000 - 0x000007fefe16d000 	C:\windows\system32\WS2_32.dll
+0x000007fefd3b0000 - 0x000007fefd3b8000 	C:\windows\system32\NSI.dll
+0x000007fefae60000 - 0x000007fefae9b000 	C:\windows\system32\WINMM.dll
+0x0000000076fe0000 - 0x0000000076fe7000 	C:\windows\system32\PSAPI.DLL
+0x000000006d800000 - 0x000000006d80f000 	D:\Dev\java\jre7\bin\verify.dll
+0x000000006d7d0000 - 0x000000006d7f8000 	D:\Dev\java\jre7\bin\java.dll
+0x000000006d710000 - 0x000000006d725000 	D:\Dev\java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:D:\Dev\Android\sdk\platforms\android-17\android.jar 
+java_command: xzd.mobile.android.ui.ActivityAddToLib
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Dev\java
+CLASSPATH=.;D:\Dev\java\lib\dt.jar;C:\Program Files (x86)\QuickTime\QTSystem\QTJava.zip
+PATH=D:\oracle\app\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\Dev\java\jre\bin;D:\Dev\java\bin;D:\Dev\Android\sdk\platform-tools;D:\Dev\Android\sdk\tools;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Program Files (x86)\Git\TortoiseGit\bin;D:\Program Files\WIDCOMM\Bluetooth Software\;D:\Program Files\WIDCOMM\Bluetooth Software\syswow64;c:\Program Files (x86)\Common Files\Ulead Systems\MPEG;D:\Dev\apache-ant-1.9.0\bin;C:\Program Files (x86)\QuickTime\QTSystem\;D:\Dev\Android\eclipse\apache-maven-3.1.0-alpha-1\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\
+USERNAME=ZhangLei
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 6148632k(1159620k free), swap 12295404k(7551572k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.7-b01) for windows-amd64 JRE (1.7.0_17-b02), built on Mar  1 2013 03:38:30 by "java_re" with unknown MS VC++:1600
+
+time: Sun Jul 21 15:28:00 2013
+elapsed time: 0 seconds
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_order_manage_ll"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/shape_order_manage_button"
+            android:gravity="left|center"
+            android:hint="点击进行选择"
+            android:minWidth="200dip"
+            android:paddingLeft="5dip"
+            android:textColor="#d6d6d6" />
+    </RelativeLayout>
+
+    <include layout="@layout/loading" />
+
+    <ListView
+        android:id="@+id/lv_consume"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="2dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="1dip"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout>

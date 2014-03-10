@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/top" />
+
+    <RelativeLayout
+        android:id="@+id/login_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dip"
+        android:gravity="center_horizontal" >
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_login_edt"
+            android:ems="10"
+            android:hint="请输入用户名"
+            android:maxLength="20"
+            android:minHeight="45dip"
+            android:paddingLeft="10dip"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_username"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/shape_login_edt"
+            android:ems="10"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:minHeight="45dip"
+            android:paddingLeft="10dip"
+            android:singleLine="true" >
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/btn_box"
+            android:layout_width="250dip"
+            android:layout_height="40dip"
+            android:layout_below="@id/edt_password"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="11dp"
+                android:text="记住密码" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/selector_login_forget"
+                android:minWidth="150dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:scaleType="center"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:src="@drawable/login_bottom" />
+
+</RelativeLayout>

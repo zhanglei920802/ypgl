@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <include
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/wrap_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip" >
+
+                <TextView
+                    android:id="@+id/order_medcine_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="10dip"
+                    android:singleLine="true"
+                    android:text="药品名称"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/top_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_medcine_name"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="10dip" >
+
+                    <ImageView
+                        android:id="@+id/sales_main_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/order_medcine_name"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_salesman" />
+
+                    <TextView
+                        android:id="@+id/salesman_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@id/sales_main_icon"
+                        android:minWidth="30dip"
+                        android:text="业务员:于雷"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/order_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:minWidth="30dip"
+                        android:text="2013-07-17"
+                        android:textColor="#666666" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/order_date"
+                        android:layout_marginRight="4dip"
+                        android:layout_toLeftOf="@id/order_date"
+                        android:adjustViewBounds="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_colock" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/top_box"
+                android:layout_below="@id/sales"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="20dip"
+                android:singleLine="true"
+                android:text="客户"
+                android:textColor="#666666" />
+
+            <RelativeLayout
+                android:id="@+id/custom_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/custom_title"
+                android:layout_marginTop="10dip"
+                android:background="#fafafa"
+                android:minWidth="100dip"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip" >
+
+                <ImageView
+                    android:id="@+id/custom_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_woman" />
+
+                <TextView
+                    android:id="@+id/custom_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/custom_icon"
+                    android:minWidth="30dip"
+                    android:text="客户"
+                    android:textColor="#666666" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/custom_icon"
+                    android:layout_below="@id/custom_name"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="10dip"
+                    android:background="#fafafa" >
+
+                    <TextView
+                        android:id="@+id/order_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="30dip"
+                        android:text="总金额：180"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/order_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/order_total_price"
+                        android:layout_marginTop="10dip"
+                        android:minWidth="30dip"
+                        android:text="订单位置:"
+                        android:textColor="#666666" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/order_detail_ramrk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/custom_box"
+                android:background="#ffffff"
+                android:gravity="top"
+                android:hint="企业从事药品经营和质量管理的工作人员，应当符合有关法律规定及本规范。。。"
+                android:minHeight="50dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:paddingTop="5dip"
+                android:textSize="14sp" />
+            <!-- State -->
+
+            <TextView
+                android:id="@+id/state_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_detail_ramrk"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="20dip"
+                android:singleLine="true"
+                android:text="状态"
+                android:textColor="#666666" />
+
+            <RelativeLayout
+                android:id="@+id/state_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/state_title"
+                android:layout_marginTop="10dip"
+                android:background="#fafafa"
+                android:minWidth="100dip"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip" >
+
+                <ImageView
+                    android:id="@+id/status_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_status" />
+
+                <TextView
+                    android:id="@+id/status_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/status_icon"
+                    android:minWidth="30dip"
+                    android:text="已执行"
+                    android:textColor="#666666" />
+
+                <TextView
+                    android:id="@+id/process_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:minWidth="30dip"
+                    android:text="处理:2013年7月18日 "
+                    android:textColor="#666666" />
+
+                <TextView
+                    android:id="@+id/province_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/status_icon"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dip"
+                    android:minWidth="30dip"
+                    android:text="Province Check"
+                    android:textColor="#666666" />
+
+                <TextView
+                    android:id="@+id/city_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/province_check"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dip"
+                    android:minWidth="30dip"
+                    android:text="city Check"
+                    android:textColor="#666666" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/order_detail_process_ramrk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/state_box"
+                android:background="#ffffff"
+                android:gravity="top"
+                android:hint=" 处理意见：批准"
+                android:paddingLeft="12dip"
+                android:paddingRight="5dip"
+                android:paddingTop="5dip"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_medicine_list"
+                android:layout_width="match_parent"
+                android:layout_height="1020dip"
+                android:layout_below="@id/order_detail_process_ramrk"
+                android:layout_marginTop="20dip"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="1dip"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:visibility="gone" >
+            </ListView>
+            <TextView android:id="@+id/order_edit"   android:paddingLeft="20dip"
+                android:paddingRight="20dip" android:background="@drawable/selector_login_forget" android:layout_margin="5dip" android:textColor="@color/white" android:layout_width="match_parent" android:gravity="center" android:layout_height="40dip" android:text="编辑" android:layout_below="@id/lv_medicine_list" android:textSize="16sp"/>
+           <TextView android:id="@+id/order_review_true"   android:paddingLeft="20dip"
+                android:paddingRight="20dip" android:background="@drawable/selector_login_forget" android:layout_margin="5dip" android:textColor="@color/white" android:layout_width="match_parent" android:gravity="center" android:layout_height="40dip" android:text="同意" android:layout_below="@id/order_edit" android:textSize="16sp"/>
+           <TextView android:id="@+id/order_review_false"   android:paddingLeft="20dip"
+                android:paddingRight="20dip" android:background="@drawable/selector_login_forget" android:layout_margin="5dip" android:textColor="@color/white" android:layout_width="match_parent" android:gravity="center" android:layout_height="40dip" android:text="不同意" android:layout_below="@id/order_review_true" android:textSize="16sp"/>
+           
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

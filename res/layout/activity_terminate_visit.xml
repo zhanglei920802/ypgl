@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top2" />
+
+    <include layout="@layout/xzd_visit_bar" />
+
+    <include layout="@layout/loading" />
+
+    <xzd.mobile.android.ui.wdiget.PullToRefreshListView
+        android:id="@+id/lv_terminate_visit"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="2dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="1dip"
+        android:visibility="gone" >
+    </xzd.mobile.android.ui.wdiget.PullToRefreshListView>
+
+</LinearLayout>

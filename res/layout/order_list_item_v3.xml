@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/shape_oreder"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/salers_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_man"
+            android:drawablePadding="10dip"
+            android:minWidth="100dip"
+            android:paddingLeft="10dip"
+            android:text="业务员"
+            android:textColor="#727272"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/orders_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salers_name"
+            android:layout_marginTop="10dip"
+            android:minWidth="100dip"
+            android:paddingLeft="10dip"
+            android:text="订单总数"
+            android:textColor="#727272"
+            android:textSize="18sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

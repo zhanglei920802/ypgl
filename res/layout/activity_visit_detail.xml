@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <include
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/wrap_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip" >
+
+                <TextView
+                    android:id="@+id/visit_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="10dip"
+                    android:singleLine="true"
+                    android:text="拜访地点:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/top_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/visit_address"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="10dip" >
+
+                    <ImageView
+                        android:id="@+id/sales_main_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/order_medcine_name"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_salesman" />
+
+                    <TextView
+                        android:id="@+id/salesman_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@id/sales_main_icon"
+                        android:minWidth="30dip"
+                        android:text="业务员:于雷"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/visit_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:minWidth="30dip"
+                        android:text="2013-07-17"
+                        android:textColor="#666666" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/order_date"
+                        android:layout_marginRight="4dip"
+                        android:layout_toLeftOf="@id/visit_date"
+                        android:adjustViewBounds="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_colock" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/custom_box1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sales"
+                android:layout_marginTop="10dip"
+                android:background="#ffffff"
+                android:minWidth="100dip"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip" >
+
+                <RelativeLayout
+                    android:id="@+id/custom_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="8dip" >
+
+                    <ImageView
+                        android:id="@+id/custom_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_woman" />
+
+                    <TextView
+                        android:id="@+id/custom_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/custom_icon"
+                        android:minWidth="30dip"
+                        android:text="客户"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/view_lib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dip"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/selector_order_btn"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:scaleType="center"
+                        android:text="查看库存"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/custom_icon"
+                    android:layout_below="@id/custom_icon"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="10dip" >
+
+                    <ImageView
+                        android:id="@+id/test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_woman"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/visitlocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/test"
+                        android:minWidth="30dip"
+                        android:text="录入位置:"
+                        android:textColor="#666666" />
+
+                    <TextView
+                        android:id="@+id/add_lib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dip"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/selector_order_btn"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:scaleType="center"
+                        android:text="添加库存"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/visitremark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/custom_box1"
+                android:layout_marginTop="20dip"
+                android:background="#ffffff"
+                android:gravity="top"
+                android:hint=" 处理意见：批准"
+                android:paddingLeft="12dip"
+                android:paddingRight="5dip"
+                android:paddingTop="20dip"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <ListView
+                android:id="@+id/lv_visit_record_list"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_below="@id/visitremark"
+                android:layout_marginTop="20dip"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="1dip"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:visibility="visible" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/lv_mark_list"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:layout_below="@id/lv_visit_record_list"
+                android:layout_marginTop="20dip"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="1dip"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:visibility="visible" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/add_order"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/lv_mark_list"
+                android:layout_margin="5dip"
+                android:background="@drawable/selector_login_forget"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="添加订单"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/add_note"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/add_order"
+                android:layout_margin="5dip"
+                android:background="@drawable/selector_login_forget"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="添加点评"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/edit_visit"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/add_note"
+                android:layout_margin="5dip"
+                android:background="@drawable/selector_login_forget"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="编辑拜访"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

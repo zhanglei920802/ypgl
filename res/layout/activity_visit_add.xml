@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/extras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="10dip"
+                android:text="拜访信息"
+                android:textColor="#727272"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/shape_corner"
+                android:minHeight="100dip"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip" >
+
+                <EditText
+                    android:id="@+id/custom_name"
+                    style="@style/order_add_edt"
+                    android:layout_below="@id/medcine_name"
+                    android:layout_marginTop="5dip"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:editable="false"
+                    android:focusable="true"
+                    android:hint="点击选择拜访客户" />
+
+                <View
+                    android:id="@+id/h1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@id/custom_name"
+                    android:background="#c9c9c9" />
+
+                <EditText
+                    android:id="@+id/visist_address"
+                    style="@style/order_add_edt"
+                    android:layout_below="@id/h1"
+                    android:layout_marginTop="5dip"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:hint="拜访地点" />
+            </RelativeLayout>
+            <!-- 其他要求 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/shape_corner"
+                android:minHeight="150dip"
+                android:paddingBottom="5dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/extras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="备注:"
+                    android:textColor="#727272"
+                    android:textSize="17sp" />
+
+                <View
+                    android:id="@+id/divide_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@id/extras"
+                    android:layout_marginTop="10dip"
+                    android:background="#0da7d3" />
+
+                <EditText
+                    android:id="@+id/edt_extras"
+                    style="@style/order_add_edt"
+                    android:layout_below="@id/divide_2"
+                    android:layout_marginTop="5dip"
+                    android:gravity="top"
+                    android:hint="企业从事药品经营和质量管理工作的人员,应当符合有关法律法规及本规范规定的资格要求,不得有相关法律法规禁止从业的情形。"
+                    android:minHeight="100dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv_cus_visit"
+                android:layout_width="match_parent"
+                android:layout_height="1020dip"
+                android:layout_marginTop="20dip"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="1dip"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:visibility="gone" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/mylocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/shape_corner"
+                android:maxLines="1"
+                android:minHeight="30dip"
+                android:minWidth="150dip"
+                android:paddingBottom="5dip"
+                android:paddingTop="10dip"
+                android:singleLine="true"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <TextView
+        android:id="@+id/extras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginTop="10dip"
+        android:text="添加到库存"
+        android:textColor="#727272"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/shape_corner"
+        android:minHeight="100dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <EditText
+            android:id="@+id/medicine_name"
+            style="@style/order_add_edt"
+            android:layout_marginTop="5dip"
+            android:clickable="true"
+            android:drawableRight="@drawable/arrow_right"
+            android:editable="false"
+            android:focusable="true"
+            android:hint="点击选择药品" />
+
+        <View
+            android:id="@+id/h1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@id/medicine_name"
+            android:background="#c9c9c9" />
+
+        <EditText
+            android:id="@+id/customer_name"
+            style="@style/order_add_edt"
+            android:layout_below="@id/h1"
+            android:layout_marginTop="5dip"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="true"
+            android:hint="客户姓名" />
+
+        <View
+            android:id="@+id/h2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@id/customer_name"
+            android:background="#c9c9c9" />
+
+        <EditText
+            android:id="@+id/count"
+            style="@style/order_add_edt"
+            android:layout_below="@id/h2"
+            android:layout_marginTop="5dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="数量"
+            android:inputType="numberSigned" />
+    </RelativeLayout>
+    <!-- 其他要求 -->
+
+</LinearLayout>

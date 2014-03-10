@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/main_header"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/cusmgr_input1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:background="@drawable/shape_order_manage_button"
+        android:gravity="left|center"
+        android:hint="客户名或联系人"
+        android:maxWidth="300dip"
+        android:minWidth="150dip"
+        android:paddingLeft="5dip"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/cusmgr_input2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/shape_order_manage_button"
+        android:gravity="left|center"
+        android:hint="选择客户"
+        android:paddingLeft="5dip"
+        android:paddingRight="10dip"
+        android:maxLength="4"
+        android:textColor="#d6d6d6" />
+
+    <Button
+        android:id="@+id/cusmgr_search"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/shape_order_manage_button"
+        android:gravity="left|center"
+        android:hint="搜索"
+        android:minWidth="40dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="10dip"
+        android:textColor="@color/black" />
+
+</LinearLayout>

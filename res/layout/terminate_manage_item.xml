@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/shape_oreder"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <!-- sales man -->
+
+        <LinearLayout
+            android:id="@+id/sales_man_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/icon_man" />
+
+            <TextView
+                android:id="@+id/sales_man_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:maxLines="1"
+                android:minWidth="150dip"
+                android:singleLine="true"
+                android:text="业务员:"
+                android:textColor="#c0c0c0" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/h1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@id/sales_man_box"
+            android:layout_marginBottom="3dip"
+            android:layout_marginTop="3dip"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/terminate_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/h1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:maxWidth="100dip"
+            android:minWidth="50dip"
+            android:text="终端客户"
+            android:textColor="#464646"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/terminate_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/terminate_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="4dip"
+            android:maxWidth="100dip"
+            android:minWidth="50dip"
+            android:text="区域:"
+            android:textColor="#464646"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/customer_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/terminate_area"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/icon_woman" />
+
+            <TextView
+                android:id="@+id/contact_man"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:maxLines="1"
+                android:minWidth="150dip"
+                android:singleLine="true"
+                android:text="联系人:"
+                android:textColor="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:maxLines="1"
+                android:minWidth="150dip"
+                android:singleLine="true"
+                android:text="分组名称"
+                android:textColor="#c0c0c0" />
+        </LinearLayout>
+        <!-- date -->
+
+        <RelativeLayout
+            android:id="@+id/date_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_box"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_phone" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:maxLines="1"
+                    android:minWidth="150dip"
+                    android:singleLine="true"
+                    android:text="联系电话: "
+                    android:textColor="#c0c0c0" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:adjustViewBounds="true"
+                android:background="@drawable/selector_order_btn"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:scaleType="center"
+                android:text="编辑"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

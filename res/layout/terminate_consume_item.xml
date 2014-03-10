@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/shape_oreder"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/top_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip" >
+
+            <ImageView
+                android:id="@+id/consumer_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_salesman" />
+
+            <TextView
+                android:id="@+id/consumer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/consumer_icon"
+                android:minWidth="30dip"
+                android:text="终端客户:张丽" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/box2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_box"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="11.5dip" >
+
+            <TextView
+                android:id="@+id/medicine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="30dip"
+                android:text="药品名称:"
+                android:textColor="#828282" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/box3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/box2"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="11.5dip" >
+
+            <TextView
+                android:id="@+id/visit_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dip"
+                android:text="2013-07-17~2013-07-19"
+                android:textColor="#828282"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/box3"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="11.5dip" >
+
+            <TextView
+                android:id="@+id/medicine_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dip"
+                android:text="数量:50"
+                android:textColor="#92bae0"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

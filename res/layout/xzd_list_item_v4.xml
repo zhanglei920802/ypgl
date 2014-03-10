@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="2dip" >
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="200dip"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:text="文本"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/xzd_v_l1"
+            android:layout_width="0.5dip"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@id/item1"
+            android:background="@color/black" />
+
+        <EditText
+            android:id="@+id/item2"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@id/xzd_v_l1"
+            android:background="@null"
+            android:button="@null"
+            android:focusable="true"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            android:paddingLeft="3dip"
+            android:paddingRight="10dip"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

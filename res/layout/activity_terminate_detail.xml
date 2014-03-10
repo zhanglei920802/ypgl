@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <include
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/wrap_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/main_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:minHeight="50dip" >
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="药品名称"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/title_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/label"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="center"
+                            android:src="@drawable/icon_location" />
+
+                        <TextView
+                            android:id="@+id/area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:maxLines="1"
+                            android:minWidth="50dip"
+                            android:singleLine="true"
+                            android:text="区域: "
+                            android:textColor="#c0c0c0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="center"
+                            android:src="@drawable/icon_man" />
+
+                        <TextView
+                            android:id="@+id/sales_man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            android:maxLines="1"
+                            android:minWidth="50dip"
+                            android:singleLine="true"
+                            android:text="业务员： "
+                            android:textColor="#c0c0c0" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/terminate_divide1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@id/title_box"
+                    android:layout_marginTop="5dip"
+                    android:background="#d5d5d5" />
+
+                <RelativeLayout
+                    android:id="@+id/sumary_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/terminate_divide1"
+                    android:layout_marginTop="5dip"
+                    android:minWidth="200dip" >
+
+                    <!-- 联系人 -->
+
+                    <LinearLayout
+                        android:id="@+id/contact_box"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:id="@+id/contact_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系人"
+                            android:textColor="#a7a7a7"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/contact_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:text="丁茉莉"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <!-- 垂直分割线 -->
+
+                    <View
+                        android:id="@+id/v_terminate_divide2"
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/label"
+                        android:layout_centerHorizontal="true"
+                        android:background="#ccf0fb" />
+                    <!-- 传真 -->
+
+                    <LinearLayout
+                        android:id="@+id/fax_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@id/v_terminate_divide2"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:id="@+id/fax_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="传真"
+                            android:textColor="#a7a7a7"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/fax_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dip"
+                            android:text="028-999999999"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <!-- 水平分割线 -->
+
+                    <View
+                        android:id="@+id/h_terminate_divide2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_below="@id/contact_box"
+                        android:layout_marginTop="10dip"
+                        android:background="#ccf0fb" />
+                    <!-- 地址 -->
+
+                    <LinearLayout
+                        android:id="@+id/add_box"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/h_terminate_divide2"
+                        android:layout_marginTop="10dip"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:id="@+id/add_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地址"
+                            android:textColor="#a7a7a7"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dip"
+                            android:text="成都理工大学"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <!-- 联系电话 -->
+
+                    <LinearLayout
+                        android:id="@+id/tel_box"
+                        android:layout_width="150dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/fax_box"
+                        android:layout_alignTop="@id/add_box"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:id="@+id/tel_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系电话"
+                            android:textColor="#a7a7a7"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tel_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dip"
+                            android:text="1878888888"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/terminate_divide2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@id/sumary_box"
+                    android:layout_marginTop="5dip"
+                    android:background="#d5d5d5" />
+            </RelativeLayout>
+
+            <!-- 说明 -->
+
+            <ListView
+                android:id="@+id/lv_order_list"
+                android:layout_width="match_parent"
+                android:layout_height="1020dip"
+                android:layout_below="@id/main_box"
+                android:layout_marginTop="20dip"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="1dip"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:visibility="gone" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lv_order_list"
+                android:layout_margin="5dip"
+                android:background="@drawable/ca_selector_listitem_single"
+                android:minHeight="100dip"
+                android:paddingLeft="15dip"
+                android:paddingTop="15dip"
+                android:text="终端说明:\n  			 这是什么"
+                android:textColor="#656565" />
+
+            <TextView
+                android:id="@+id/add_order"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/desc"
+                android:layout_margin="5dip"
+                android:background="@drawable/selector_login_forget"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="添加订单"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/visit_cus"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/add_order"
+                android:layout_margin="5dip"
+                android:background="@drawable/selector_login_forget"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="客户拜访"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/visit_cus"
+                android:layout_margin="5dip"
+                android:background="@drawable/selector_login_forget"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="编辑客户"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

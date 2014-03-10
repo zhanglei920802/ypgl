@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/main_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <xzd.mobile.android.ui.wdiget.MyImageView
+                android:id="@+id/terminate_manage"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/terminate_manage" />
+
+            <xzd.mobile.android.ui.wdiget.MyImageView
+                android:id="@+id/terminate_visit"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:layout_marginTop="10dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/terminate_visit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/line1"
+            android:orientation="vertical" >
+
+            <xzd.mobile.android.ui.wdiget.MyImageView
+                android:id="@+id/orders_manage"
+                android:layout_width="160dip"
+                android:layout_height="73dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/orders_manage" />
+
+            <xzd.mobile.android.ui.wdiget.MyImageView
+                android:id="@+id/customer_cosum"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/customer_cosum" />
+
+            <xzd.mobile.android.ui.wdiget.MyImageView
+                android:id="@+id/mylocation"
+                android:layout_width="160dip"
+                android:layout_height="73dip"
+                android:layout_marginTop="10dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/mylocation" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <xzd.mobile.android.ui.wdiget.MyImageView
+                android:id="@+id/main_document"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/main_document" />
+
+            <xzd.mobile.android.ui.wdiget.MyImageView
+                android:id="@+id/main_count"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/main_count" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/line3"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/line3"
+            android:orientation="vertical" >
+
+            <xzd.mobile.android.ui.wdiget.MyImageView
+                android:id="@+id/main_contact"
+                android:layout_width="160dip"
+                android:layout_height="160dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/main_contact" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

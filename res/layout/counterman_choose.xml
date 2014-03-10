@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+	<include layout="@layout/xzd_countermen_searchbar"/>
+    <ListView
+        android:id="@+id/lv_counterman"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#fafafa"
+        android:dividerHeight="1dip"
+        android:visibility="gone" >
+    </ListView>
+
+    <include
+        android:layout_gravity="center"
+        layout="@layout/progressbar_loading" />
+
+</LinearLayout>
